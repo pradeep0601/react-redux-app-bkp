@@ -1,3 +1,4 @@
+[![Greenkeeper badge](https://badges.greenkeeper.io/greenkeeperio/badges.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.com/pradeep0601/react-redux-app.svg?branch=master)](https://travis-ci.com/pradeep0601/react-redux-app)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
