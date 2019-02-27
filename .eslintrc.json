@@ -11,8 +11,8 @@
         "prettier/react"
     ],
     "globals": {
-        "Atomics": "readable",
-        "SharedArrayBuffer": "readable"
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
         "ecmaFeatures": {
@@ -25,10 +25,11 @@
         "react"
     ],
     "rules": {
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "react/prop-types": 0,
         "eslint.autoFixOnSave": true,
         "eslint.enable": true,
-        "max-len": ["error", 80],
-        "linebreak-style": ["error", "windows"]
+        "max-len": ["error", 180],
+        "linebreak-style": 0
     }
 }

@@ -1,10 +1,9 @@
 import React from "react";
-//import PropTypes from 'prop-types';
 
-const Comment = (props) => (
+const Comment = ({author, children}) => (
 <div className="comment">
-    <h2 className="comment-author">{props.author}</h2>
-    {props.children}
+    <h2 className="comment-author">{author}</h2>
+    {children}
 </div>
 );
 
