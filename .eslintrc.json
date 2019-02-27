@@ -5,7 +5,10 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "airbnb", 
+        "prettier", 
+        "prettier/react"
     ],
     "globals": {
         "Atomics": "readable",
@@ -24,6 +27,8 @@
     "rules": {
         "react/prop-types": 0,
         "eslint.autoFixOnSave": true,
-        "eslint.enable": true
+        "eslint.enable": true,
+        "max-len": ["error", 80],
+        "linebreak-style": ["error", "windows"]
     }
 }

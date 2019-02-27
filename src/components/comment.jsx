@@ -1,10 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types';
-
-Comment.PropTypes = {
-    author: PropTypes.string,
-    children: PropTypes.string
-}
+//import PropTypes from 'prop-types';
 
 const Comment = (props) => (
 <div className="comment">
