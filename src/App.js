@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Comment from '../src/components/comment';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
@@ -19,7 +20,10 @@ class App extends Component {
           >
             Learn React
           </a>
-        </header>
+        </header> */}
+        <Comment author="Pradeep">
+        So, what do you think about redux?
+        </Comment>
       </div>
     );
   }
