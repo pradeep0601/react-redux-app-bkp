@@ -29,6 +29,7 @@ class CommentBox extends Component {
 
         return(
             <div className="comment-box">
+            <h3>please do comment..</h3>
                 <CommentForm
                    author={author} 
                     text={text} 
@@ -36,7 +37,7 @@ class CommentBox extends Component {
                     onAuthorUpdate={() => onUpdateAuthor}
                     onTextUpdate={() => onUpdateText}
                 />
-                <h1>Comments</h1>
+                <h3>Comments</h3>
                 <CommentList comments={comments}/>
             </div>
         )

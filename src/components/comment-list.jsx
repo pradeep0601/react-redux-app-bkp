@@ -1,12 +1,21 @@
 import React from "react";
+import {Table} from 'react-bootstrap';
 import Comment from './comment';
 
+
 const CommentList = ({comments}) => (
-    <div className='comment-list'>
-    {comments && comments.map(({id, author, text}) => (
-        <Comment key={id} author={author}>{text}</Comment>
+    <Table bordered striped>
+    <thead>
+    <tr>
+    <th>Author</th><th>Comment</th><th>Operation1</th><th>Operation2</th>
+    </tr>
+    </thead>
+    <tbody>
+    {comments && comments.map((comment) => (
+        <Comment key={comment.id} comment = {comment} />
     ))}
-    </div>
+    </tbody>
+    </Table>
 )
 
 export default CommentList;
