@@ -1,7 +1,7 @@
-import ActionTypes from './action-types';
+import actionTypes from './action-types';
 
 const addComment = (comment) => ({
-    type: ActionTypes.ADD_COMMENT,
+    type: actionTypes.ADD_COMMENT,
     comment
 });
 

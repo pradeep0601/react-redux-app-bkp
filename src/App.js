@@ -1,15 +1,15 @@
 import React from 'react';
+import {Provider} from 'react-redux';
 import './App.css';
-import CommentList from "./components/CommentList";
-import CommentsData from './data/CommentsData';
-import CommentForm from './components/CommentForm';
+import CommentBox from './components/comment-box';
+import store from './store/comments-store';
 
 const App = () => (
-<div className="App">
-      <div className="comment-box">
-      <CommentList comments={CommentsData.comments}/>
-      <CommentForm />
-      </div>
+  <Provider store = {store}>
+    <div className="App">
+      <CommentBox />
     </div>
+  </Provider>
+
 )
 export default App;

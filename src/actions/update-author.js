@@ -1,7 +1,7 @@
-import ActionTypes from "./action-types";
+import actionTypes from "./action-types";
 
 const updateAuthor = (author) => ({
-    type: ActionTypes.UPDATE_AUTHOR,
+    type: actionTypes.UPDATE_AUTHOR,
     author
 });
 
